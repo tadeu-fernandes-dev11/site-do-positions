@@ -1,0 +1,299 @@
+@font-face {
+    font-family:"questrial" ;
+    src: url(Questrial-Regular.ttf);
+}
+@font-face {
+    font-family:"cabin" ;
+    src: url(Cabin-VariableFont_wdth\,wght.ttf);
+}
+
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: "Questrial", sans-serif;
+ }
+body{
+    background-color: #0b0016;
+    overflow-x: hidden;    
+}
+#backGroundPG1{
+    background-image: url(h1_hero1.jpg);
+    background-color: rgba(0,0,0,45%);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 93vh;    
+    padding: 2.5%;
+}   
+#logo{
+    margin-left: 16%;
+    vertical-align:middle;
+}
+#telefone{
+    margin-left: 40%;
+    margin-right: 2%;
+    color: white;
+    text-decoration: none;
+   
+}
+.btn_getFree{
+    text-decoration: none;
+    color: white;
+    padding: 14px 24px;
+    background-color: rgb(214, 160, 76);
+    border: solid rgb(214, 160, 76) 1px ;
+}
+.btn_getFree:hover{
+    background-color: transparent;
+    border: solid rgb(214, 160, 76) 1px ;
+    color:rgb(214, 160, 76) ;
+    
+
+}
+#menu{
+    width: 2%;
+    margin-left: 2%;
+    height: 25px;
+    display: inline-block;
+
+}
+#menu>span{
+    border: solid white 1px;
+    display: inline-block;
+    width: 90%;
+}
+aside{
+    background-color:  #111111;
+    width: 20%;
+    height: 100vb;
+    padding: 140px 50px 10px 59px;
+    position: absolute;
+    top: 0;
+    right: -400px;
+    transition: 0.8s;
+    text-align: center;
+    z-index: 2;
+}
+aside>ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+#checkBoxPg1{
+position: absolute;
+top: 4.5%;
+left: 82%;
+width: 50px;
+height: 35px;
+opacity: 0;
+cursor: pointer;
+}
+#checkBoxPg1:checked+aside{
+    right: 0px;
+    transition: 0.8s;
+}
+#checkBoxPg1:checked{
+    position: fixed;
+    left: 83%;
+    top: 5.8%;
+    z-index: 5;
+    height: 20px;
+    width: 20px;
+}
+#chis{
+    position: absolute;
+    top: 4.5%;
+    cursor: pointer;
+    font-size: 2.2em;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+li{
+    padding-bottom: 30px;
+    font-size: 1.3em;
+}
+li>a{
+    text-decoration: none;
+    color: white;
+}
+#divdaslogos{
+    display: inline block;
+    margin-top: 85%;
+    
+}
+.redesSociais{
+width: 10%;
+height: 30px;
+position: absolute;
+
+}
+.tamanhoDasLogo{
+    margin-right : 5%;
+}
+
+
+#facebook:hover {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+#facebook:hover ~ #facebookLaranja{
+    transform: rotateY(180deg);
+    width: 10%;
+    height: 30px;
+    transform: 0.5s;
+    opacity: 1;
+}
+#facebookLaranja{
+opacity: 0;
+}
+#instagram:hover {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+#instagram:hover ~ #instagramLaranja{
+    transform: rotateY(180deg);
+    transform: 0.5s;
+    opacity: 1;
+}
+#instagramLaranja{
+opacity: 0;
+}
+#linkedin:hover {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+#linkedin:hover ~ #linkedinLaranja{
+    transform: rotateY(180deg);
+    transform: 0.5s;
+    opacity: 1;
+}
+#linkedinLaranja{
+opacity: 0;
+}
+#youtube:hover {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+#youtube:hover ~ #youtubeLaranja{
+    transform: rotateY(180deg);
+    transform: 0.5s;
+    opacity: 1;
+}
+#youtubeLaranja{
+opacity: 0;
+}
+#spanSalt{
+    position: absolute;
+    top: 35%;
+    left: 22%;
+    color: white;
+    font-family: "Questrial",sans-serif;
+}
+#textoGrandao{
+    position: absolute;
+    color: white;
+    font-size: 55px;
+    top: 38%;
+    left: 22%;
+    font-family: "Cabin",sans-serif;
+    font-weight: 400;
+}
+#play{
+    color: white;
+    position: absolute;
+    top: 48%;
+    left: 68%;
+}
+.btn_play svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 35px;
+    fill: #d6a04c;
+}
+#video{
+    position: absolute;
+    top: 42%;
+    right: 22%;
+}
+
+#txtPlay{
+    color: white;
+    position: absolute;
+    top: 45%;
+    right: 28%;
+    font-size: 20px;
+}
+
+.btn_play{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+.btn_play::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 72px;
+    height: 72px;
+    border: #d6a04c solid 2px;
+    border-radius: 50%;
+}
+.btn_play::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 72px;
+    height: 72px;
+    border:rgba(255, 255, 255, 0.06) solid 30px;
+    border-radius: 50%;
+}
+.btn_play:hover{
+    background-color: #d6a04c;
+    transition: 0.5s;
+}
+.btn_play:hover>#svgPlay{
+    fill:  white;
+}
+#rodapeLaranja{
+    position: absolute;
+    width: 50%;
+    height: 11vh;
+    z-index: 0;
+    background-color: #d6a04c;
+    top: 82%;
+    left: 50%;
+}
+.textimDuRodape{
+    color: white;
+    display: inline-block; 
+    margin-top: 3.5%;
+    margin-left: 5%;
+    font-size: 20px;
+}
+#divDorato svg{
+    fill: #d6a04c;
+    width: 40px;
+    height: 40px;
+}
+#divDorato{
+    position: absolute;
+    left: 23%;
+    top: 83%;
+}
+.FUNCIONAESSADESGRAÇA{
+    position: relative;
+    height: 90vh;
+}
